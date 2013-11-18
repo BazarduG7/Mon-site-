@@ -26,11 +26,11 @@
  <p>De quel pays etes vous?</p>
  
 	<select name="pays" id="pays">
-		<option> <?php include("test3.php"); ?></option>
+		 <?php include("test3.php"); ?>
 		</select>
  </p>
 		<input type="submit" value="Créer un compte"/>     
        
-		
+	<form>	
     </body>
 </html>
