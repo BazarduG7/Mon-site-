@@ -1,0 +1,26 @@
+.barremenu 
+{
+border-radius:10px;
+border-style:solid;
+border-color: #F88E55; 
+background: #FFE4C4;
+margin-right: 1000px;
+margin-left: 5px;
+border-width: 7px;
+margin-top: 100px;
+}
+.tabmenu
+{
+    font-family: "Candara" ;
+font-size: medium;
+display: block; 
+
+width: 90%;
+}
+h3
+{
+    font-family: "Candara" ;
+font-size: medium;
+font-style: italic;
+
+}
