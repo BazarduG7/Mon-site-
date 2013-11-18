@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!--On ajoute les liens utilisé pour les pages css de l'entête(monsitecss) et du menu (barremenu) -->
+		<link rel="stylesheet" href="monsitecss.css" />
+		<link rel="stylesheet" href="barremenucss.css" />
+	
+		<meta charset="utf-8" />
+        <title>Mon Site Web</title>
+		
+		<!--class head utilisé pour modifier les éléments de l'entête dans le doc monsite css-->
+		<div class="head">	
+		
+		<!--on ajoute l'entête de la page-->
+		<?php include("head.php"); ?></div>
+		
+   </head>
+
+   <body>
+		<!--on utilise une class barremenu pour modifier la forme du menu contenu dans la page barremenucss-->
+		<div class="barremenu">
+		
+		<!--on ajoute la barre de menu à notre page-->
+		<?php include("barremenu.php"); ?>
+        </div>
+
+		<?php include("souscategorie.php"); ?>
+    </body>
+</html>
