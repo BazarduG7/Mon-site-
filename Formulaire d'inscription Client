@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="inscription.css" />
+        <title></title>
+    </head>
+
+    <body>
+	
+ <p></p>
+ 
+ <form method="post" action="traitement.php">
+ 
+ <p>
+	Nom:  <input type="text" name="Nom" size="50"><br/><br/>
+	Prénom: <input type="text" name="Prénom" size="50"><br/><br/>
+	Adresse: <input type="text" name="Adresse électronique" size="50"><br/><br/>
+	Confirmation: <input type="text" name="Confirmer votre adresse électronique" size="50"><br/><br/>
+	Mot de passe: <input type="password" name="Mot de passe" size="50"><br/><br/>
+	Confirmer votre mot de passe <input type="password" name="Confirmer votre mot de passe" size="50"><br/><br/>
+	Sexe:<br/>
+	Masculin : <input type="radio" name="sexe" value="Masculin"/><br/>
+	Féminin:  <input type="radio" name="sexe" value="Feminin"/><br/><br/>
+	
+ <p>De quel pays etes vous?</p>
+ 
+	<select name="pays" id="pays">
+		<option> <?php include("test3.php"); ?></option>
+		</select>
+ </p>
+		<input type="submit" value="Créer un compte"/>     
+       
+		
+    </body>
+</html>
