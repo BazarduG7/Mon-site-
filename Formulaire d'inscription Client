@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
+ <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="inscription.css" />
         <title></title>
-    </head>
+ </head>
 
     <body>
 	
- <p></p>
+ 	<p></p>
  
- <form method="post" action="traitement.php">
+ 	<form method="post" action="traitement.php">
  
  <p>
 	Nom:  <input type="text" name="Nom" size="50"><br/><br/>
@@ -23,14 +23,13 @@
 	Masculin : <input type="radio" name="sexe" value="Masculin"/><br/>
 	Féminin:  <input type="radio" name="sexe" value="Feminin"/><br/><br/>
 	
- <p>De quel pays etes vous?</p>
+ 	<p>De quel pays etes vous?</p>
  
-	<select name="pays" id="pays">
-		 <?php include("test3.php"); ?>
+		<select name="pays" id="pays">
+		<?php include("test3.php"); ?>
 		</select>
  </p>
 		<input type="submit" value="Créer un compte"/>     
-       
 	<form>	
     </body>
 </html>
