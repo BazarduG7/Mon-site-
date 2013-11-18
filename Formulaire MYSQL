@@ -1,0 +1,22 @@
+<?php
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=test', 'root', '');
+}
+catch(Exception $e)
+{
+        die('Erreur : '.$e->getMessage());
+}
+$reponse = $bdd->query('SELECT nom_fr_fr FROM pays Group by nom_fr_fr asc');
+
+while ($donnees = $reponse->fetch())
+{
+echo "<option>";
+    echo $donnees['nom_fr_fr'];
+	echo"</option>";
+}
+
+$reponse->closeCursor();
+
+?>
+
