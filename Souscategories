@@ -1,0 +1,11 @@
+<div id="sous catégorie">        
+   <div class="element_souscategorie">
+		<h3> sous categorie electromenager</h3>
+		<select name="Electroménager">
+		<option value="choix1"> fer a repasser</option>
+		<option value="choix2">aspirateur</option>
+		<option value="choix3">lave linge</option>
+		<option value="choix4">balais</option>
+		</select>
+   </div>    
+</div>
