@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="inscription.css" />
+		<?php include head.php ?>
+        <title>Bienvennue sur le Bazard du G7</title>
+    </head>
+
+    <body>
+ <h1>INSCRIPTION</h1>
+ <form method="post" action="traitement.php">
+ <p>
+	<input type="text" name="Nom" placeholder="Nom" size="30"><br/><br/>
+	<input type="text" name="Prénom" placeholder="Prénom" size="30"><br/><br/>
+	<input type="text" name="Adresse électronique" placeholder="Adresse électronique" size="60"><br/><br/>
+	<input type="text" name="Confirmation de l'adresse électronique"  placeholder="Confirmer votre adresse électronique" size="60"><br/><br/>
+	<input type="password" name="Mot de passe" placeholder="Mot de passe" size="60"><br/><br/>
+	<input type="password" name="Confirmation du mot de passe" placeholder="Confirmer votre mot de passe" size="60"><br/><br/>
+	Sexe:<br/>
+	Masculin: <input type="radio" name="sexe" value="Masculin"/><br/>
+	Féminin: <input type="radio" name="sexe" value="Feminin"/><br/><br/>
+	
+	<input type="text" name="Vile" placeholder="Ville" size="60"><br/><br/>
+	<input type="text" name="Région" placeholder="Région" size="60"><br/><br/>
+	
+	<p>De quel pays etes vous?<p/>
+	<select name="pays" id="pays"><br/><br/>
+	<?php include("inscriptionsql.php");?>
+	</p>
+    <input type="submit" value="Créer votre compte"/>     
+  </form>
+		
+    </body>
+</html>
