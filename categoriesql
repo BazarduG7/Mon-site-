@@ -12,9 +12,9 @@ $reponse = $bdd->query('SELECT nom_categorie FROM categorie');
 while ($donnees = $reponse->fetch())
 {
 
-	echo "<li><a href=categorie>";
-    echo $donnees['nom_categorie'];
-	echo"</a></li>";
+	echo "<tr><td><a href=categorie>";
+    	echo $donnees['nom_categorie'];
+	echo"</a></td></tr>";
 }
 
 $reponse->closeCursor();
