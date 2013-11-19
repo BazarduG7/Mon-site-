@@ -1,16 +1,8 @@
 <!--ceci est la barre du menu que l'on code-->
 <div classe="barremenu"> 
-<h3> Menu <h3>
+	<h3> Menu <h3>
         <table border="1" cellspacing="5" cellpadding="14"class="tabmenu">
-            <tr><td><a href="Bricolage.html">Bricolage</a></td></tr>
-                    <tr><td><a href="Electronique&Electrom��nager.html">Electronique&Electroménager</a></td></tr>
-		<tr><td><a href="Sport.html">Sport</a></td></tr>
-		<tr><td><a href="Droguerie&Cosm��tiques.html">Droguerie&Cosmétiques</a></td></tr>
-		<tr><td><a href="Meubles&D��cos.html">Meubles&décos</a></td></tr>
-		<tr><td><a href="Multim��dia.html">Multimédia</a></td></tr>
-		<tr><td><a href="V��tements&Chaussures.html">Vêtements&Chaussures</a></td></tr>
-		<tr><td><a href="Transports.html">Transports</a></td></tr>
-                                <tr><td><a href="Pu��riculture.html">Puériculture</a></td></tr>
+	<?php include("categoriesql.php");?>
                         </table>
 </div>
 
