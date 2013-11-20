@@ -7,27 +7,14 @@ catch(Exception $e)
 {
         die('Erreur : '.$e->getMessage());
 }
-$reponse = $bdd->query('SELECT nom_fr_fr FROM pays Group by nom_fr_fr asc');
+$reponse = $bdd->query('SELECT nom_en_gb FROM pays Group by nom_en_gb asc');
 
 while ($donnees = $reponse->fetch())
 {
-    echo $donnees['nom_fr_fr'] . '<br />';
+    echo $donnees['nom_en_gb'] . '<br />';
 }
 
 $reponse->closeCursor();
 
 ?>
 
-<?php
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=test', 'root', '');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
-$reponse = $bdd->query('SELECT nom_fr_fr FROM pays');
-$donnees=$reponse->fetch();
-echo $donnees['nom_fr_fr'] . '<br />';
-?>
