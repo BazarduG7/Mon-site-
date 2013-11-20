@@ -1,23 +1,28 @@
 <?php
 try
 {
-$bdd = new PDO ('mysql:host=localhost;dbname=test', 'mathieu',''
- );
+$bdd = new PDO ('mysql:host=localhost;dbname=test', 'Mathieu','');
  } 
 catch (Excpetion $e)
 {
-die('Erreur: ').$e->getmessage());
+die('Erreur : '.$e->getMessage());
 }
-
 $req = $bdd->prepare('INSERT INTO utilisateur(identifiant, nom, prenom, adresse, adresse_mail, sexe) 
-VALUES(:identifiant, :nom, :prenom, :adresse, :adresse_mail, :sexe)');
+VALUES([identifiant], [nom], [prenom], [adresse], [adresse_mail], [sexe])');
+echo $identifiant='24';
+echo $nom='GRANIER';
+echo $prenom='mathieu';
+echo $adresse='boulevard saint marcel PARIS';
+echo $adresse_mail='mgranier@juniorisep.com';
+echo $sexe='homme';
 $req->execute(array(
-'identifiant'=> $identifiant,
-'nom'=> $nom,
-'prenom'=> $prenom,
-'adresse'=> $adresse,
-'adresse_mail'=> $adresse_mail,
-'sexe'=> $sexe
+ 'identifiant'=> $identifiant,
+ 'nom'=> $nom,
+ 'prenom'=> $prenom,
+ 'adresse'=> $adresse,
+ 'adresse_mail'=> $adresse_mail,
+ 'sexe'=> $sexe
 ));
 
  echo 'vous avez bien été ajouté' ;
+?>
