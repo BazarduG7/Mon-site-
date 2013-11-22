@@ -1,13 +1,14 @@
-<!--on cr���� l'ent��te de notre page sous format php-->
+<!--on cr???? l'ent??te de notre page sous format php-->
 
 <div id="entete">        
    <div class="element_entete">
 		<div class="logo">
 		<!--on y inserre notre logo-->
                 <a href="Mon Site.php"><img src="logo.png" width"95" height="95" alt="photo logo" /></a>
-			</div>
-       <div>	<!--on y inserre nos principaux liens vers les autres pages, inscription, forum etc-->
-           </div
+              <p class='p1'>Site d'acquisition <br/> d'objets en ligne</p>  </div>
+       
+       </div>	<!--on y inserre nos principaux liens vers les autres pages, inscription, forum etc-->
+           
 			<div class="nav">
 			
                             <table border="0" cellspacing="5" cellpadding="14"class="tab"> 
@@ -15,8 +16,11 @@
                     <td><a href="Inscription/Connexion" class="z1">Inscription/Connexion</a></td>
                     <td><a href="Mon Bazar(Mes Favoris)" class="z2">Mon Bazar(Mes Favoris)</a></td>
                         
-			<td><a href="Forum" class="z3">Forum</a></td>
-			<td><a href="Aide en ligne" class="z4"">Aide en ligne</a></td>
+			<td><a href="Vendre" class="z1">Vendre</a></td>
+			<td><a href="Don" class="z2">Don</a></td>
+                        <td><a href="Achat" class="z3">Achat</a></td>
+                        <td><a href="Louer" class="z4">Louer</a></td>
+			<td><a href="Emprunter" class="z5">Emprunt</a></td>
                         </tr></table>
 	   </div>
    </div>    
