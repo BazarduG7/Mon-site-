@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <h1> Faites un don </h1>
+
+        <form action="cible.php" method="post">
+                <p>
+                Nom: <input type="text" name="nom" value="Entrez votre Nom"/></br></br> 
+                Prénom: <input type="text" name="prenom" value="Entrez votre Prénom"/></br></br>
+                Email: <input type="text" name="email" value="Entrez votre E-mail"/> </br> </br>
+                Nom de votre annonce: <input type="text" name="anonce_name" value="Entrez l'intitul? de votre annonce"/> </br> </br>
+              Etat: 
+              <select name="choix">
+    <option value="choix1">Etat</option>
+    <option value="choix2">Neuf </option>  
+  
+</select> </br> </br>
+              Mot de passe: <input type="password" name="password" value=""/> </br> </br>
+               Description du produit: </br> </br><textarea name="message" rows="8" cols="45">
+Décrivez votre produit en quelques lignes.
+</textarea></br> </br>
+Dans quelle cat?gorie?:
+<select name="nom_categ" id="nom_categ">
+    <?php include ('traitement.php');?>
+</select> </br> </br>
+<input type="submit" name="Valider"/>
+                
+                </p>
+                
+                </form>
+                
+                
+                
+</html>
